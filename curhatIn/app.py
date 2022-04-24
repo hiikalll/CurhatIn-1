@@ -14,7 +14,7 @@ app.secret_key = 'secretkeyuye'
 
 DATABASE = 'curhatdb2.db'
                          
-database = SqliteDatabase(DATABASE)
+database = MySQLDatabase('curhatin', user='root', passwd='', host='localhost')
 # database = MySQLDatabase(DATABASE)
 
 class BaseModel(Model):
